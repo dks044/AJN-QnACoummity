@@ -1,0 +1,47 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+	<div class="d-flex justify-content-center">
+		<div class="card" style="width: 18rem;">
+		  <div class="card-body text-center">
+		    <h5 class="card-title"><i class="fa-solid fa-address-card"></i> 회원정보 </h5>
+		    <h6 class="card-subtitle mb-2 text-muted" th:text="|${#authentication.name} 님|"></h6>
+		    <p class="card-text" th:text="${user.email}"></p>
+	<!-- 	    <a href="#" class="card-link">Card link</a>
+		    <a href="#" class="card-link">Another link</a> -->
+		  </div>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center">
+		<button class="btn btn-primary" id="userOfwrite_btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    	작성한 질문글 보기
+  		</button>
+	  	<button class="btn btn-primary" id="userOfwrite_btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+	    	작성한 답변글 보기
+	  	</button>
+	</div>
+  	<div class="collapse" id="collapseExample">
+		<ol class="list-group list-group" th:each="question, loop : ${questionList}">
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold" th:text="|제목: ${question.subject}|"></div>
+		      <p th:text="|작성일: ${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm')}|"></p>
+		    </div>
+		    <span class="badge bg-primary rounded-pill" th:if="${#lists.size(question.answerList) > 0}"
+			 th:text="|답변: ${#lists.size(question.answerList)}|"></span>
+		    <span class="badge text-bg-warning rounded-pill" th:if="${#lists.size(question.commentList) > 0}"
+			 th:text="|댓글: ${#lists.size(question.commentList)}|"></span>
+		  </li>
+  		</ol>
+	</div>
+  	<div class="collapse" id="collapseExample2">
+		<ol class="list-group list-group" th:each="answer, loop : ${answerList}">
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto" id="answerBox">
+		      <div class="fw-bold" th:text="|내용: ${answer.content}|"></div>
+		      <p th:text="|작성일: ${#temporals.format(answer.createDate, 'yyyy-MM-dd HH:mm')}|"></p>
+		    </div>
+		  </li>
+  		</ol>
+	</div>
+</div>
+</html>

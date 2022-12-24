@@ -1,0 +1,53 @@
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+/*question_list시작*/
+#ajnTitle{ /*대문 타이틀*/
+	font-size: 42px;
+}
+/*question_list끝*/
+/*댓글 크기 조정*/
+.comment {
+    border-top:dotted 1px #ddd;
+    font-size:0.7em;
+}
+/*mypage 시작*/
+/**/
+#userOfwrite_btn{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+#answerBox{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*mypage 끝*/
+
+/*nav아이콘 애니메이션*/
+#navIcon{
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;}
+    
+/*애니메이션/
+/*아이콘 360도 회전*/
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
