@@ -18,6 +18,9 @@
 > 21년도 이후 경제적으로 악화된 가정상황 떄문에 생계와 건강이 악화 되서 코딩 공부를 잠시 멈췄습니다, 하지만 개발자의 꿈을
 계속 버리진 않았기에, 또 이 꿈을 잊지않았단것을 증명할 필요가 있기에, 
 또 공백기간을 메꾸기위해 다시 공부와 개발을 시작하고, 'AJN's Qna Coummity' 완성했습니다.
+(그래서 페이지 대문을 '중요한건 꺾이지 않는 마음'으로 지었습니다..ㅎ)
+
+
 ## 🔨  Technology Stack(s)
 -   Frontend : JavaScript, CSS,HTML, BootStrap
 -   Backend : H2 DATABASE, JAVA, SpringBoot
