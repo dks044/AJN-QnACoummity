@@ -23,5 +23,5 @@
 
 ## 🔨  Technology Stack(s)
 -   Frontend : JavaScript, CSS,HTML, BootStrap
--   Backend : H2 DATABASE, JAVA, SpringBoot
+-   Backend : H2 DATABASE, JAVA, SpringBoot, JPA
 -  Deployment : Spring Tool Suite 4
