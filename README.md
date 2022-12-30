@@ -1,5 +1,5 @@
 # **AJN's Qna Coummity**
-
+# 🚀링크: http://52.78.217.39:8080/
 ## 📌 Summary
 
 **저에게 QnA할 수 있는 간단한 콘셉트의 커뮤니티 사이트 입니다.**
@@ -24,4 +24,4 @@
 ## 🔨  Technology Stack(s)
 -   Frontend : JavaScript, CSS,HTML, BootStrap
 -   Backend : H2 DATABASE, JAVA, SpringBoot, JPA
--  Deployment : Spring Tool Suite 4
+-   Deployment : Spring Tool Suite 4
