@@ -1,5 +1,6 @@
 # **AJN's Qna Coummity**
 # 🚀링크: http://52.78.217.39:8080/
+# 🚀영상링크: https://youtu.be/jEo_yRkK008
 ## 📌 Summary
 
 **저에게 QnA할 수 있는 간단한 콘셉트의 커뮤니티 사이트 입니다.**
